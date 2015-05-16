@@ -14,6 +14,12 @@
 		844B48B51B074FBB00F81AA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844B48B41B074FBB00F81AA7 /* Images.xcassets */; };
 		844B48B81B074FBB00F81AA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B48B61B074FBB00F81AA7 /* LaunchScreen.xib */; };
 		844B48C41B074FBB00F81AA7 /* ObjectiveC2_Lesson4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B48C31B074FBB00F81AA7 /* ObjectiveC2_Lesson4Tests.m */; };
+		844B48CE1B07506300F81AA7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B48CD1B07506300F81AA7 /* MapKit.framework */; };
+		844B48D01B07506D00F81AA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B48CF1B07506D00F81AA7 /* CoreLocation.framework */; };
+		844B48D71B07569300F81AA7 /* TableMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B48D61B07569300F81AA7 /* TableMapViewController.m */; };
+		844B48DA1B0758DB00F81AA7 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B48D91B0758DB00F81AA7 /* TableViewCell.m */; };
+		844B48DC1B07625600F81AA7 /* marker_apartments.png in Resources */ = {isa = PBXBuildFile; fileRef = 844B48DB1B07625600F81AA7 /* marker_apartments.png */; };
+		844B48DF1B07960B00F81AA7 /* SingleTone.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B48DE1B07960B00F81AA7 /* SingleTone.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,15 @@
 		844B48BD1B074FBB00F81AA7 /* ObjectiveC2_Lesson4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveC2_Lesson4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B48C21B074FBB00F81AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844B48C31B074FBB00F81AA7 /* ObjectiveC2_Lesson4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveC2_Lesson4Tests.m; sourceTree = "<group>"; };
+		844B48CD1B07506300F81AA7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		844B48CF1B07506D00F81AA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		844B48D51B07569300F81AA7 /* TableMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableMapViewController.h; sourceTree = "<group>"; };
+		844B48D61B07569300F81AA7 /* TableMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableMapViewController.m; sourceTree = "<group>"; };
+		844B48D81B0758DB00F81AA7 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		844B48D91B0758DB00F81AA7 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		844B48DB1B07625600F81AA7 /* marker_apartments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker_apartments.png; sourceTree = "<group>"; };
+		844B48DD1B07960B00F81AA7 /* SingleTone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTone.h; sourceTree = "<group>"; };
+		844B48DE1B07960B00F81AA7 /* SingleTone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTone.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844B48D01B07506D00F81AA7 /* CoreLocation.framework in Frameworks */,
+				844B48CE1B07506300F81AA7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 		844B489B1B074FBA00F81AA7 = {
 			isa = PBXGroup;
 			children = (
+				844B48E01B07961800F81AA7 /* Framework */,
 				844B48A61B074FBA00F81AA7 /* ObjectiveC2_Lesson4 */,
 				844B48C01B074FBB00F81AA7 /* ObjectiveC2_Lesson4Tests */,
 				844B48A51B074FBA00F81AA7 /* Products */,
@@ -81,10 +99,17 @@
 		844B48A61B074FBA00F81AA7 /* ObjectiveC2_Lesson4 */ = {
 			isa = PBXGroup;
 			children = (
+				844B48DB1B07625600F81AA7 /* marker_apartments.png */,
 				844B48AB1B074FBB00F81AA7 /* AppDelegate.h */,
 				844B48AC1B074FBB00F81AA7 /* AppDelegate.m */,
 				844B48AE1B074FBB00F81AA7 /* ViewController.h */,
 				844B48AF1B074FBB00F81AA7 /* ViewController.m */,
+				844B48DD1B07960B00F81AA7 /* SingleTone.h */,
+				844B48DE1B07960B00F81AA7 /* SingleTone.m */,
+				844B48D51B07569300F81AA7 /* TableMapViewController.h */,
+				844B48D61B07569300F81AA7 /* TableMapViewController.m */,
+				844B48D81B0758DB00F81AA7 /* TableViewCell.h */,
+				844B48D91B0758DB00F81AA7 /* TableViewCell.m */,
 				844B48B11B074FBB00F81AA7 /* Main.storyboard */,
 				844B48B41B074FBB00F81AA7 /* Images.xcassets */,
 				844B48B61B074FBB00F81AA7 /* LaunchScreen.xib */,
@@ -117,6 +142,16 @@
 				844B48C21B074FBB00F81AA7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		844B48E01B07961800F81AA7 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				844B48CF1B07506D00F81AA7 /* CoreLocation.framework */,
+				844B48CD1B07506300F81AA7 /* MapKit.framework */,
+			);
+			name = Framework;
+			path = ObjectiveC2_Lesson4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844B48DC1B07625600F81AA7 /* marker_apartments.png in Resources */,
 				844B48B31B074FBB00F81AA7 /* Main.storyboard in Resources */,
 				844B48B81B074FBB00F81AA7 /* LaunchScreen.xib in Resources */,
 				844B48B51B074FBB00F81AA7 /* Images.xcassets in Resources */,
@@ -219,8 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844B48D71B07569300F81AA7 /* TableMapViewController.m in Sources */,
 				844B48B01B074FBB00F81AA7 /* ViewController.m in Sources */,
 				844B48AD1B074FBB00F81AA7 /* AppDelegate.m in Sources */,
+				844B48DF1B07960B00F81AA7 /* SingleTone.m in Sources */,
+				844B48DA1B0758DB00F81AA7 /* TableViewCell.m in Sources */,
 				844B48AA1B074FBB00F81AA7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
